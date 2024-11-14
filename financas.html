@@ -13,6 +13,7 @@
     </header>
 
     <section class="cards">
+      <!-- Cartões para saldo -->
       <div class="card">
         <div class="card-title">
           <span class="title">Entradas</span>
@@ -68,20 +69,20 @@
       </section>
     </section>
 
-    <!-- Modal para nova transação -->
-    <div class="modal" id="modalNovaTransacao">
-      <div class="modal-content">
-        <h3>Nova Transação</h3>
-        <input type="text" id="descricao" placeholder="Descrição" />
-        <input type="number" id="preco" placeholder="Preço" />
-        <div class="botoes">
-          <button class="outflow" onclick="adicionarTransacao('saida')">Saída</button>
-          <button class="add" onclick="adicionarTransacao('entrada')">Entrada</button>
-        </div>
+      <!-- Modal para transação -->
+      <div class="modal" id="modalNovaTransacao">
+        <div class="modal-content">
+          <h3>Nova Transação</h3>
+          <input type="text" id="descricao" placeholder="Descrição" />
+          <input type="number" id="preco" placeholder="Preço" />
+          <div class="botoes">
+            <button class="outflow" id="saidaBtn" onclick="adicionarTransacao('saida')">Saída</button>
+            <button class="add" id="entradaBtn" onclick="adicionarTransacao('entrada')">Entrada</button>
+          </div>
 
-        <button id="fecharModal">Fechar</button>
+          <button id="closeModal">Fechar</button>
+        </div>
       </div>
-    </div>
 
     <script src="assets/scriptFin.js"></script>
   </body>
