@@ -1,17 +1,22 @@
-const btnTransacao = document.getElementById("novaTransacaoBtn");
-const descInput = document.getElementById("descricao");
-const precoInput = document.getElementById("preco");
-const listaTransacoes = document.getElementById("listaTransacoes").getElementsByTagName('tbody')[0]; 
-const data = new Date().toLocaleDateString("pt-BR");
-const btnEntrada = document.querySelector(".add");
-const btnSaida = document.querySelector(".outflow");
-const saldoTotalCard = document.getElementById("saldoTotal");
+const btnTransacao = document.getElementById("novaTransacaoBtn")
+const descInput = document.getElementById("descricao")
+const precoInput = document.getElementById("preco")
+const listaTransacoes = document.getElementById("listaTransacoes").getElementsByTagName('tbody')[0] 
+const data = new Date().toLocaleDateString("pt-BR")
+const btnEntrada = document.querySelector(".add")
+const btnSaida = document.querySelector(".outflow")
+
+const saldoTotalCard = document.getElementById("saldoTotal")
+const saidasCard = document.getElementById("totalSaidas")
+const entradasCard = document.getElementById("totalEntradas")
 
 var saldoTotal = 0
+var saida = 0
+var entrada = 0
 
 
 function atualizarSaldo() {
-    saldoTotalCard.textContent = `R$ ${saldoTotal.toFixed(2).replace(".", ",")}`;
+    saldoTotalCard.textContent = `R$ ${saldoTotal.toFixed(2).replace(".", ",")}`
 }
 
 
@@ -20,11 +25,11 @@ const adicionarTransacao = (tipoTransacao) => {
     const precoValue = parseFloat(precoInput.value)
     
     if (!descValue || isNaN(precoValue) || precoValue <= 0 || tipoTransacao === null) {
-        alert("Preencha todos os campos corretamente e defina o tipo de transação!");
-        return; 
+        alert("Preencha todos os campos corretamente e defina o tipo de transação!")
+        return 
     }
 
-    const novaLinha = document.createElement("tr");
+    const novaLinha = document.createElement("tr")
 
 
     novaLinha.innerHTML = `
@@ -32,48 +37,49 @@ const adicionarTransacao = (tipoTransacao) => {
         <td>R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
         <td>${data}</td>
         <td class="${tipoTransacao}">${tipoTransacao === "entrada" ? "Entrada" : "Saída"}</td>
-    `;
+    `
 
-
-    listaTransacoes.appendChild(novaLinha);
+    listaTransacoes.appendChild(novaLinha)
 
     if (tipoTransacao === "entrada") {
         saldoTotal += precoValue
+        entrada += precoValue
     } else if (tipoTransacao === "saida") {
         saldoTotal -= precoValue
+        saida += precoValue
     }
+    
 
 
-    atualizarSaldo();
+    atualizarSaldo()
 
 
-    descInput.value = "";
-    precoInput.value = "";
-    tipoTransacao = null;
+    descInput.value = ""
+    precoInput.value = ""
+    tipoTransacao = null
 }
 
 
-const saveButton = document.getElementById("save");
+const saveButton = document.getElementById("save")
 saveButton.addEventListener("click", () => {
-    
-    if (btnEntrada.classList.contains('active')) {
-        adicionarTransacao("entrada");
-    } else if (btnSaida.classList.contains('active')) {
-        adicionarTransacao("saida");
-    } else {
-        alert("Por favor, selecione o tipo de transação.");
-    }
-});
 
+    if (btnEntrada.classList.contains('active')) {
+        adicionarTransacao("entrada")
+    } else if (btnSaida.classList.contains('active')) {
+        adicionarTransacao("saida")
+    } else {
+        alert("Por favor, selecione o tipo de transação.")
+    }
+})
 
 btnTransacao.addEventListener("click", () => {
-    const modal = document.getElementById("modalNovaTransacao");
-    modal.style.display = "block";
-});
+    const modal = document.getElementById("modalNovaTransacao")
+    modal.style.display = "block"
+})
 
 
-const fecharModal = document.getElementById("fecharModal");
+const fecharModal = document.getElementById("fecharModal")
 fecharModal.addEventListener("click", () => {
-    const modal = document.getElementById("modalNovaTransacao");
-    modal.style.display = "none";
+    const modal = document.getElementById("modalNovaTransacao")
+    modal.style.display = "none"
 })
