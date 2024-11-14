@@ -61,7 +61,6 @@ const adicionarTransacao = (tipoTransacao) => {
     modal.style.display = 'none'
 }
 
-
 btnTransacao.addEventListener('click', () => {
     modal.style.display = 'flex' 
 })
