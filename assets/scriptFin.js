@@ -17,6 +17,8 @@ var entrada = 0
 
 function atualizarSaldo() {
     saldoTotalCard.textContent = `R$ ${saldoTotal.toFixed(2).replace(".", ",")}`
+    entradasCard.textContent = `R$ ${entrada.toFixed(2).replace(".", ",")}`
+    saidasCard.textContent = `R$ ${saida.toFixed(2).replace(".", ",")}`
 }
 
 
@@ -50,7 +52,6 @@ const adicionarTransacao = (tipoTransacao) => {
     }
     
 
-
     atualizarSaldo()
 
 
@@ -83,3 +84,4 @@ fecharModal.addEventListener("click", () => {
     const modal = document.getElementById("modalNovaTransacao")
     modal.style.display = "none"
 })
+
