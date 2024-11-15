@@ -35,13 +35,23 @@ const adicionarTransacao = (tipoTransacao) => {
     }
 
     const novaLinha = document.createElement("tr")
-
-    novaLinha.innerHTML = `
-        <td>${descValue}</td>
-        <td>R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
+    if (tipoTransacao === "entrada"){
+        novaLinha.innerHTML = `
+        <td>${descValue}</td>            
+        <td class="entrada" style="color:greenyellow">R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
         <td>${data}</td>
-        <td class="${tipoTransacao}">${tipoTransacao === "entrada" ? "Entrada" : "Saída"}</td>
+        <td style="color:greenyellow">Entrada</td> 
     `
+    }
+    else{
+        novaLinha.innerHTML = `
+            <td>${descValue}</td>            
+            <td class="saida" style="color:red">R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
+            <td>${data}</td>
+            <td style="color:red">Saída</td>    
+    `
+    }
+
 
     listaTransacoes.appendChild(novaLinha)
 

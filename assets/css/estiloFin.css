@@ -123,98 +123,94 @@ header button {
 
 /* Modal */
 .modal {
-    display: none; /* Inicialmente oculta */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .modal-content {
-    background: #2b2b4b;
-    padding: 20px;
+    background: #201F24;
+    height: 300px;
+    padding: 60px;
     border-radius: 8px;
     text-align: center;
     width: 300px;
 }
 
-/* Botões da modal */
+.forms{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.forms input{
+    margin-bottom: 15px;
+    padding: 15px 60px;
+    background-color: #121114;
+    color: white;
+    border-radius: 5px;
+    border-color: #8D2C2C;
+    border: 1px solid #8D2C2C;
+}
+
 .botoes button {
     border: none;
-    padding: 10px;
+    padding: 15px 46px;
     margin: 5px;
     cursor: pointer;
-}
-
-#deletarTransacao {
-    background-color: red;
-}
-
-#salvarEdicao{
-    background-color: green;
 }
 
 .outflow {
-    background-color: red;
+    background-color: #8D2C2C;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}
+.outflow:hover{
+    background-color: #be3b3b;
 }
 
 .add {
-    background-color: #1db954;
+    background-color: #007C59;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}
+.add:hover{
+    background-color: #08a87b ;
 }
 
 #closeModal {
-    background-color: #FF6347;
+    background-color: #302F36;
     color: white;
-}
-
-
-
-.botoes button {
-    border: none;
-    padding: 10px;
-    margin: 5px;
+    padding: 15px 120px;
+    border-radius: 5px;
+    border:none;
     cursor: pointer;
+    margin-top: 10px;
+}
+#closeModal:hover{
+    background-color: #525255;
 }
 
-#deletarTransacao {
-    background-color: red;
-}
-#salvarEdicao{
-    background-color: green;
-}
-.outflow{
-    background-color: red;
-}
-.add{
-    background-color: #1db954;
-}
 
-.botoes-acao {
-    display: flex;
-    gap: 5px;
-}
 
-.botoes-acao button {
-    background-color: #2b2b4b;
-    border: 1px solid #fff;
-    padding: 5px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.ticker {
+/* .ticker {
     background-color: #1a3352;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     padding: 5px 0;
-}
+} */
 
-.ticker-content {
+/* .ticker-content {
     display: inline-block;
     white-space: nowrap;
     animation: tickerScroll 40s linear infinite;
@@ -234,13 +230,13 @@ header button {
     100% {
         transform: translateX(-100%);
     }
-}
+}*/
 .G{
     color: greenyellow;
 }
 .R{
     color: red;
-}
+} 
 
 
 .transacoes table {
@@ -267,14 +263,6 @@ header button {
     text-align: left;
 }
 
-.transacoes th:first-child {
-    border-top-left-radius: 12px;
-}
-
-.transacoes th:last-child {
-    border-top-right-radius: 12px;
-}
-
 .botoes-acao button {
     background-color: #2b2b4b;
     border: 1px solid #fff;
@@ -288,12 +276,12 @@ header button {
     background-color: #1db954;
 }
 
-/* Ajuste no fundo da tabela para destacar as linhas */
+
 .transacoes tbody tr:hover {
-    background-color: #45444e; /* Realça a linha ao passar o mouse */
+    background-color: #45444e; 
 }
 
-/* Adiciona um espaço entre o fundo e as linhas para dar o efeito de 'cards' */
+
 .transacoes tbody {
     background-color: transparent;
 }
@@ -333,4 +321,19 @@ header button {
 .saida{
     color:red
 }
+td .entrada{
+    color: #00B27E;
+}
+td .saida{
+    color:#e63946;
+}
 
+
+::-webkit-scrollbar{
+    background-color: #00000000;
+    width: 1px;
+}
+::-webkit-scrollbar-thumb{
+    width: 1px;
+    color: #1db954;
+}

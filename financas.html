@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WePay - Controle de Transações</title>
-    <link rel="stylesheet" href="assets/estiloFin.css" />
+    <link rel="stylesheet" href="assets/css/estiloFin.css" />
+    <link rel="icon" type="image/png" href="assets/img/logoMini.png">
   </head>
   <body>
     <header>
-      <img class="logo" src="assets/Logo.png" />
+      <img class="logo" src="assets/img/Logo.png" />
       <button id="novaTransacaoBtn">Nova Transação</button>
     </header>
 
@@ -73,14 +74,16 @@
       <div class="modal" id="modalNovaTransacao">
         <div class="modal-content">
           <h3>Nova Transação</h3>
-          <input type="text" id="descricao" placeholder="Descrição" />
-          <input type="number" id="preco" placeholder="Preço" />
+          <div class="forms">
+            <input type="text" id="descricao" placeholder="Descrição" />
+            <input type="number" id="preco" placeholder="Preço" />
+          </div>
           <div class="botoes">
             <button class="outflow" id="saidaBtn" onclick="adicionarTransacao('saida')">Saída</button>
             <button class="add" id="entradaBtn" onclick="adicionarTransacao('entrada')">Entrada</button>
           </div>
 
-          <button id="closeModal">Fechar</button>
+          <button class="closeBtn" id="closeModal">Fechar</button>
         </div>
       </div>
 
