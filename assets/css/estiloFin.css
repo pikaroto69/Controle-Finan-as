@@ -200,44 +200,12 @@ header button {
     background-color: #525255;
 }
 
-
-
-/* .ticker {
-    background-color: #1a3352;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    padding: 5px 0;
-} */
-
-/* .ticker-content {
-    display: inline-block;
-    white-space: nowrap;
-    animation: tickerScroll 40s linear infinite;
-}
-
-.ticker-content span {
-    display: inline-block;
-    margin-right: 50px;
-    color: #ffffff;
-    font-size: 0.9em;
-}
-
-@keyframes tickerScroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}*/
 .G{
     color: greenyellow;
 }
 .R{
     color: red;
 } 
-
 
 .transacoes table {
     width: 100%;
