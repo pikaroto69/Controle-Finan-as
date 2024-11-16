@@ -100,14 +100,18 @@ header button {
 }
 
 
+thead tr th:first-child{
+    border-top-left-radius: 10px;
 
+}
+thead tr th:last-child{
+    border-top-right-radius: 10px;
+
+}
 .transacoes {
     padding: 20px;
 }
-h3{
-    display: flex;
-    justify-content: space-between;
-}
+
 .transacoes table {
     width: 100%;
     border-collapse: collapse;
@@ -144,7 +148,10 @@ h3{
     align-items: center;
     gap: 20px;
 }
-
+h3{
+    display: flex;
+    justify-content: space-between;
+}
 .modal-content {
     background: #201F24;
     height: 300px;
