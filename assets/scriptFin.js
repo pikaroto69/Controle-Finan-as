@@ -3,7 +3,7 @@ const descInput = document.getElementById("descricao")
 const precoInput = document.getElementById("preco")
 const listaTransacoes = document.getElementById("listaTransacoes").getElementsByTagName('tbody')[0]
 const data = new Date().toLocaleDateString("pt-BR")
-const btnEntrada = document.querySelector(".add")
+const btnEntrada = document.querySelector(".income")
 const btnSaida = document.querySelector(".outflow")
 
 const saldoTotalCard = document.getElementById("saldoTotal")

@@ -13,14 +13,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
 input:focus {
     outline: none;
 }
 
-
 input:active {
     outline: none;
 }
+
 /* Header */
 header {
     display: flex;
@@ -100,14 +101,6 @@ header button {
 }
 
 
-thead tr th:first-child{
-    border-top-left-radius: 10px;
-
-}
-thead tr th:last-child{
-    border-top-right-radius: 10px;
-
-}
 .transacoes {
     padding: 20px;
 }
@@ -193,14 +186,14 @@ h3{
     background-color: #be3b3b;
 }
 
-.add {
+.income {
     background-color: #007C59;
     border-radius: 5px;
     padding-right: 20px;
     padding-left: 20px;
     color: white;
 }
-.add:hover{
+.income:hover{
     background-color: #08a87b ;
 }
 
