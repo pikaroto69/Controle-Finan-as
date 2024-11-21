@@ -205,6 +205,41 @@ h3{
 }
 
 
+#closeModalEdita {
+    background-color: #302F36;
+    color: white;
+    padding: 15px 120px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#closeModalEdita:hover{
+    background-color: #525255;
+}
+
+.delete {
+    background-color: #8D2C2C;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}
+.delete:hover{
+    background-color: #be3b3b;
+}
+
+.save {
+    background-color: #007C59;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}
+.save:hover{
+    background-color: #08a87b ;
+}
+
 .G{
     color: #007C59;
 }
@@ -300,6 +335,7 @@ td .saida{
     color:#e63946;
 }
 
+/* Tirar Scroll Bar */
 
 ::-webkit-scrollbar{
     background-color: #00000000;
@@ -310,9 +346,7 @@ td .saida{
     color: #1db954;
 }
 
-
-
-
+/* Rodapé */
 
 .footer img{
     width: 180px;
@@ -368,3 +402,4 @@ td .saida{
 .footer .footer-column a:hover {
     color: #ffffff; 
 }
+

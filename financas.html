@@ -55,7 +55,12 @@
         <div>
           <table id="listaTransacoes">
             <tbody>
-              <!--Transações inseridas aqui -->
+              <tr onclick="abrirModalEditar(1,'AA',400)">
+                <td>AA</td>            
+                <td class="saida" style="color:#8D2C2C">R$ 400,00</td>
+                <td style="color:#8D2C2C">Saída</td>    
+                <td>12/12/2012</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -76,6 +81,24 @@
           </div>
 
           <button class="closeBtn" id="closeModal">Fechar</button>
+        </div>
+      </div>
+
+
+     <!-- Modal para editar transação -->
+      <div class="modal" id="modalEditaTransacao">
+        <div class="modal-content">
+          <h3>Editar Transação</h3>
+          <div class="forms">
+            <input type="hidden" id="id" />
+            <input type="text" id="descricao_edit" placeholder="Descrição" />
+            <input type="number" id="preco_edit" placeholder="Preço" />
+          </div>
+          <div class="botoes">
+            <button class="save" id="salvarEdicaoBtn">Salvar</button>
+            <button class="delete" id="excluirEdicaoBtn">Excluir</button>
+          </div>
+          <button class="closeBtn" id="closeModalEdita">Fechar</button>
         </div>
       </div>
 

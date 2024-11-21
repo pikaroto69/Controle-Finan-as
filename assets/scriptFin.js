@@ -13,9 +13,29 @@ const entradasCard = document.getElementById("totalEntradas")
 const modal = document.getElementById('modalNovaTransacao')
 const closeBtn = document.getElementById('closeModal')
 
+const modalEdit = document.getElementById('modalEditaTransacao')
+const closeEdit = document.getElementById('closeModalEdita')
+
+closeEdit.addEventListener('click', () => {
+    modalEdit.style.display = 'none'  
+})
+
+
 var saldoTotal = 0
 var saida = 0
 var entrada = 0
+
+function abrirModalEditar(id, desc, preco) {
+    document.getElementById("id").value = id
+    document.getElementById("descricao_edit").value = desc
+    document.getElementById("preco_edit").value = preco
+ 
+    // ABRE MODAL
+    const modalEdit = document.getElementById('modalEditaTransacao')
+    modalEdit.style.display = 'flex'
+
+
+}
 
 
 function atualizarSaldo() {
