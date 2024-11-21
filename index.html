@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/img/logoMini.png">
 </head>
@@ -34,11 +35,10 @@
                 <input type="email" placeholder="E-mail">
                 <div class="password-wrapper">
                     <input type="password" placeholder="Senha" id="login-password">
-                    <button type="button" class="hold-password" data-target="login-password">👁</button>
+                    <button type="button" class="hold-password" data-target="login-password"><i class="fas fa-eye-slash"></i></button>
                 </div>
                 <div class="modal-buttons">
                     <button id="openRegisterModal" class="btn-cadastrar-se" type="button">Cadastrar-se</button>
-                    <button type="button">Esqueci minha senha</button>
                 </div>
                 <button type="submit" class="login-btn">Logar</button>
             </form>
@@ -54,7 +54,7 @@
                 <input type="email" placeholder="E-mail">
                 <div class="password-wrapper">
                     <input type="password" placeholder="Senha" id="register-password">
-                    <button type="button" class="hold-password" data-target="register-password">👁</button>
+                    <button type="button" class="hold-password" data-target="register-password"><i class="fas fa-eye-slash"></i></button>
                 </div>
                 <div class="modal-buttons">
                     <button id="openLoginModal" type="button">Voltar para o Login</button>
@@ -63,9 +63,21 @@
             </form>
         </div>
     </div>
-    
-    
 
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Esqueci minha senha</h2>
+            <form id="form-forgot-password">
+                <input type="email" placeholder="Digite seu e-mail" id="forgot-password-email">
+                <div class="modal-buttons">
+                    <button type="submit" class="forgot-password-btn">Enviar</button>
+                    <button type="button" id="cancelForgotPassword">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+   
     <section class="section1">  
         <div class="pai-section1">
             <h2 class="titulo2">Quatro regras para menos <br> estresse financeiro</h2>
@@ -214,10 +226,8 @@
         }); 
 
         if (allValid) {
-            alert("Você se logou com sucesso!");
-            document.getElementById("loginModal").style.display = "none";
-            document.body.classList.remove("modal-open");
-            resetForm();
+            
+                
         } else {
             alert("Por favor, preencha todos os campos corretamente.");
         }
@@ -242,10 +252,8 @@
         });
 
         if (allValid) {
-            alert("Você se cadastrou com sucesso!");
-            document.getElementById("registerModal").style.display = "none";
-            document.body.classList.remove("modal-open");
-            resetForm();
+            
+            
         } else {
             alert("Por favor, preencha todos os campos corretamente.");
         }
@@ -275,18 +283,19 @@
 
         button.addEventListener('mousedown', () => {
             targetInput.type = 'text';
+            button.querySelector('i').classList.replace('fa-eye-slash', 'fa-eye');
         });
 
         button.addEventListener('mouseup', () => {
             targetInput.type = 'password';
+            button.querySelector('i').classList.replace('fa-eye', 'fa-eye-slash');
         });
 
         button.addEventListener('mouseleave', () => {
             targetInput.type = 'password';
+            button.querySelector('i').classList.replace('fa-eye', 'fa-eye-slash');
         });
     });
 
-
-    
 </script>
 </html>
