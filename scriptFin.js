@@ -70,7 +70,6 @@ const adicionarTransacao = (tipoTransacao) => {
     `
     }
 
-
     listaTransacoes.appendChild(novaLinha)
 
     if (tipoTransacao === "entrada") {
