@@ -417,3 +417,118 @@ footer {
     border-radius: 2px;
 }
 
+
+
+
+
+
+/* Para telas pequenas, como celulares */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+
+    header button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Cartões */
+    .cards {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    /* Tabela de transações */
+    .transacoes table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .transacoes td, .transacoes th {
+        padding: 8px;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Botões de ação no modal */
+    .botoes button {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .search-tab {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Rodapé */
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Para telas muito pequenas, como celulares antigos */
+@media (max-width: 480px) {
+    .search-tab {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .botoes button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    /* Ajuste nos cartões */
+    .card {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+}
