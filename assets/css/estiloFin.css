@@ -57,7 +57,7 @@ header button {
     padding: 20px;
     gap: 60px;
     margin: 0px 70px;
-    margin-top: -90px;;
+    margin-top: -90px;
 }
 .card-title{
     font-size: x-small;
@@ -75,20 +75,20 @@ header button {
     font-size: x-small;
 }
 #totalEntradas {
-    font-size: x-large;
+    font-size:25px;
 }
 #totalSaidas{
-    font-size: x-large;
+    font-size:25px;
 }
 #saldoTotal{
-    font-size: x-large;
+    font-size:25px;
 }
 .content{
     text-align: left;   
 }
 .card {
     background-color: #302F36;
-    padding: 40px 80px;
+    padding: 50px 80px;
     border-radius: 8px;
     text-align: center;
     display: flex;
@@ -119,13 +119,6 @@ header button {
     background-color: #2b2b4b;
 }
 
-.transacoes tbody tr.saida {
-    color: #e63946;
-}
-
-.transacoes tbody tr.entrada {
-    color: #1db954;
-}
 
 
 /* Modal */
@@ -212,10 +205,10 @@ h3{
 
 
 .G{
-    color: greenyellow;
+    color: #007C59;
 }
 .R{
-    color: red;
+    color: #8D2C2C;
 } 
 
 

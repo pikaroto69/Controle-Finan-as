@@ -38,17 +38,17 @@ const adicionarTransacao = (tipoTransacao) => {
     if (tipoTransacao === "entrada"){
         novaLinha.innerHTML = `
         <td>${descValue}</td>            
-        <td class="entrada" style="color:greenyellow">R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
+        <td class="entrada" style="color:#007C59">R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
+        <td style="color:#007C59">Entrada</td> 
         <td>${data}</td>
-        <td style="color:greenyellow">Entrada</td> 
     `
     }
     else{
         novaLinha.innerHTML = `
             <td>${descValue}</td>            
-            <td class="saida" style="color:red">R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
+            <td class="saida" style="color:#8D2C2C">R$ ${precoValue.toFixed(2).replace(".", ",")}</td>
+            <td style="color:#8D2C2C">Saída</td>    
             <td>${data}</td>
-            <td style="color:red">Saída</td>    
     `
     }
 
@@ -81,11 +81,7 @@ closeBtn.addEventListener('click', () => {
 })
 
 
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none'
-    }
-})
+
 
 
 const saveButton = document.getElementById("save")
