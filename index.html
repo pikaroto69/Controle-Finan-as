@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header1" id="header">
+        <div class="pai0">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <li><button id="openModal">Entrar</button></li>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner"></div>
+    <div class="espaco-preto"></div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Logar-se</h2>
+            <form id="form-login">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Senha" id="login-password">
+                    <button type="button" class="hold-password" data-target="login-password">👁</button>
+                </div>
+                <div class="modal-buttons">
+                    <button id="openRegisterModal" class="btn-cadastrar-se" type="button">Cadastrar-se</button>
+                    <button type="button">Esqueci minha senha</button>
+                </div>
+                <button type="submit" class="login-btn">Logar</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastrar-se</h2>
+            <form class="form-cadastrar">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Senha" id="register-password">
+                    <button type="button" class="hold-password" data-target="register-password">👁</button>
+                </div>
+                <div class="modal-buttons">
+                    <button id="openLoginModal" type="button">Voltar para o Login</button>
+                </div>
+                <button type="submit" class="cadastrar-btn">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <section class="section1">  
+        <div class="pai-section1">
+            <h2 class="titulo2">Quatro regras para menos <br> estresse financeiro</h2>
+            <div class="div-button"><button>Saiba mais sobre as regras</button></div>
+            <div class="pai-card">
+                <div class="card" id="card1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="numero">1</span>
+                            <p>Orçamento mensal</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Defina um orçamento mensal para controlar suas finanças.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="numero2">2</span>
+                            <p>Fundo de emergência</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Tenha um fundo de emergência para imprevistos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="numero3">3</span>
+                            <p>Pague a si mesmo primeiro</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Guarde uma parte da sua renda antes de gastar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="numero4">4</span>
+                            <p>Evite dívidas desnecessárias</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Evite assumir dívidas que você não precisa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#121212" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,192C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+        
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/img/Logo.png" alt="Logo">
+        </div>
+        <div class="footer-section">
+            <h3>Termos legais</h3>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Suas escolhas de privacidade</a></li>
+                <li><a href="#">No Brasil</a></li>
+                <li><a href="#">Segurança</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>App</h3>
+            <ul>
+                <li><a href="#">O que há de novo</a></li>
+                <li><a href="#">Central de ajuda</a></li>
+                <li><a href="#">Sugestões</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Trabalhe conosco</h3>
+            <ul>
+                <li><a href="#">A empresa</a></li>
+                <li><a href="#">Imprensa</a></li>
+                <li><a href="#">Carreiras</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    document.getElementById("openModal").onclick = function() {
+        document.getElementById("loginModal").style.display = "flex";
+        document.body.classList.add("modal-open");
+    };
+
+    document.querySelectorAll(".close").forEach((closeButton, index) => {
+        closeButton.onclick = function() {
+            if (index === 0) {
+                document.getElementById("loginModal").style.display = "none";
+            } else if (index === 1) {
+                document.getElementById("registerModal").style.display = "none";
+            }
+            document.body.classList.remove("modal-open");
+            resetForm();
+        };
+    });
+
+    document.getElementById("openRegisterModal").onclick = function() {
+        document.getElementById("loginModal").style.display = "none";
+        document.getElementById("registerModal").style.display = "flex";
+    };
+
+    document.getElementById("openLoginModal").onclick = function() {
+        document.getElementById("registerModal").style.display = "none";
+        document.getElementById("loginModal").style.display = "flex";
+    };
+
+    const inputs = document.querySelectorAll('.modal-content input');
+    inputs.forEach(input => {
+        input.addEventListener('input', function() {
+            if (input.value.trim() === '') {
+                input.classList.remove('success');
+                input.classList.add('error');
+            } else {
+                input.classList.remove('error');
+                input.classList.add('success');
+            }
+        });
+    });
+
+    document.querySelector(".login-btn").addEventListener('click', function(event) {
+        event.preventDefault();
+
+        let allValid = true;
+        const inputs = document.querySelectorAll('#form-login input');
+
+        inputs.forEach(input => {
+            if (input.value.trim() === '') {
+                input.classList.add('error');
+                allValid = false;
+            }
+
+            if (input.type === "email" && !input.value.includes("@")) {
+                input.classList.add('error');
+                allValid = false;
+            }
+        }); 
+
+        if (allValid) {
+            alert("Você se logou com sucesso!");
+            document.getElementById("loginModal").style.display = "none";
+            document.body.classList.remove("modal-open");
+            resetForm();
+        } else {
+            alert("Por favor, preencha todos os campos corretamente.");
+        }
+    });
+
+    document.querySelector(".cadastrar-btn").addEventListener('click', function(event) {
+        event.preventDefault();
+
+        let allValid = true;
+        const inputs = document.querySelectorAll('.form-cadastrar input');
+
+        inputs.forEach(input => {
+            if (input.value.trim() === '') {
+                input.classList.add('error');
+                allValid = false;
+            }
+
+            if (input.type === "email" && !input.value.includes("@")) {
+                input.classList.add('error');
+                allValid = false;
+            }
+        });
+
+        if (allValid) {
+            alert("Você se cadastrou com sucesso!");
+            document.getElementById("registerModal").style.display = "none";
+            document.body.classList.remove("modal-open");
+            resetForm();
+        } else {
+            alert("Por favor, preencha todos os campos corretamente.");
+        }
+    });
+
+    window.addEventListener("scroll", function(event) {
+        var header = document.querySelector("#header");
+        var top = this.scrollY;
+
+        if (top >= 560) {
+            header.className = "header2";
+        } else {
+            header.className = "header1";
+        }
+    }, false);
+
+    function resetForm() {
+        const inputs = document.querySelectorAll('.modal-content input');
+        inputs.forEach(input => {
+            input.value = '';
+            input.classList.remove('error', 'success');
+        });
+    }
+
+    document.querySelectorAll('.hold-password').forEach(button => {
+        const targetInput = document.getElementById(button.dataset.target);
+
+        button.addEventListener('mousedown', () => {
+            targetInput.type = 'text';
+        });
+
+        button.addEventListener('mouseup', () => {
+            targetInput.type = 'password';
+        });
+
+        button.addEventListener('mouseleave', () => {
+            targetInput.type = 'password';
+        });
+    });
+
+
+    
+</script>
+</html>
