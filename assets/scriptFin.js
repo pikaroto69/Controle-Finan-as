@@ -33,8 +33,6 @@ function abrirModalEditar(id, desc, preco) {
     // ABRE MODAL
     const modalEdit = document.getElementById('modalEditaTransacao')
     modalEdit.style.display = 'flex'
-
-
 }
 
 
