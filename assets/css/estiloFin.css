@@ -6,6 +6,7 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     list-style: none;
+    overflow: hidden;
 }
 
 body {
@@ -256,15 +257,19 @@ h3{
 
 
 .transacoes table {
-    width: 100%;
+    width: 90%;
     border-collapse: separate;
     border-spacing: 0 10px; 
+    margin: 0 auto;
 }
 
 .transacoes tbody tr {
     background-color: #302F36;
     border-radius: 12px;
     overflow: hidden; 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .transacoes tbody tr td {
