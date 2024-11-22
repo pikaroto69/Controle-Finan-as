@@ -6,7 +6,7 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     list-style: none;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body {
@@ -421,8 +421,6 @@ footer {
 
 
 
-
-/* Para telas pequenas, como celulares */
 @media (max-width: 768px) {
     /* Header */
     header {
@@ -496,7 +494,7 @@ footer {
     }
 }
 
-/* Para telas muito pequenas, como celulares antigos */
+
 @media (max-width: 480px) {
     .search-tab {
         padding: 10px 12px;
@@ -508,7 +506,7 @@ footer {
         font-size: 12px;
     }
 
-    /* Ajuste nos cartões */
+    /* cards*/
     .card {
         padding: 15px;
         text-align: center;

@@ -415,3 +415,29 @@ body.modal-open {
 .hold-password:hover {
     color: #067B5A;
 }
+
+.div-button a{
+    color: #00B27E;
+}
+.div-button a:hover{
+    color:white;
+}
+
+@media (max-width: 433px){
+    .card p{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 330px){
+    footer{
+        display: block;
+    }
+    .card p{
+        font-size: 10px;
+    }
+    footer img{
+        margin-bottom: 15px;
+    }
+
+}

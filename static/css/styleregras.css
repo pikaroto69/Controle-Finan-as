@@ -210,3 +210,17 @@ footer {
     border-radius: 2px;
 }
 
+
+
+@media (max-width: 330px){
+    footer{
+        display: block;
+    }
+    .card p{
+        font-size: 10px;
+    }
+    footer img{
+        margin-bottom: 15px;
+    }
+
+}
